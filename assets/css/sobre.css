@@ -1,0 +1,171 @@
+#sobre {
+  background-color: var(--tertiary-bg-color);
+}
+
+#sobre h2 span {
+  color: var(--icon-color);
+}
+
+.about-content1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 3.5rem 1rem 1rem;
+}
+
+.about-photo {
+  max-width: 315px;
+  border-radius: 50%;
+}
+
+.about-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.about-description p {
+  text-align: justify;
+}
+
+.about-icons {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.about-icons span {
+  color: var(--text-color);
+  line-height: 1.3;
+}
+
+.about-content2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 1rem 3.5rem;
+}
+
+.col1 h3 {
+  margin-bottom: 2rem;
+}
+
+.accordion-header {
+  width: 100%;
+  font-family: var(--code-font);
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: var(--secondary-bg-color);
+  color: var(--subtitle-color);
+  border: 1px solid var(--tertiary-bg-color);
+  transition: all 0.3s;
+}
+
+.accordion-header.start {
+  border-radius: 10px 10px 0 0;
+}
+
+.accordion-header.end, .accordion-body.end {
+  border-radius: 0 0 10px 10px;
+}
+
+.accordion-body {
+  display: none;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.65rem;
+  padding: 1.25rem;
+  background: var(--primary-bg-color-t);
+  border: 1px solid var(--tertiary-bg-color);
+}
+
+.accordion-item.active .accordion-header {
+  background: var(--primary-bg-color);
+}
+
+.accordion-item.active .accordion-header.end {
+  border-radius: 0;
+}
+
+.accordion-item.active .accordion-body {
+  display: flex;
+}
+
+.accordion-item.active .bi-caret-down-fill {
+  transform: rotate(180deg);
+}
+
+.col2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-data {
+  color: var(--icon-color);
+}
+
+.row1,
+.row2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.about-list {
+  padding-left: 1.75rem;
+}
+
+.about-item {
+  color: var(--icon-color);
+  list-style: disc;
+}
+
+@media (min-width: 768px) {
+  #sobre h2 {
+    font-size: 2rem;
+  }
+
+  .about-content1 {
+    padding: 3.5rem 5rem 1rem;
+  }
+
+  .about-content2 {
+    padding: 3.5rem 5rem;
+  }
+
+  .about-content1 {
+    flex-direction: row;
+    align-items: start;
+    gap: 2.5rem;
+  }
+
+  .about-photo {
+    width: 35%;
+  }
+
+  .about-description {
+    align-items: start;
+  }
+
+  .col2 {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .row1 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .about-content1,
+  .about-content2 {
+    padding: 3.5rem 15rem 2rem;
+  }
+}

@@ -1,0 +1,130 @@
+@import url("./global-reset.css");
+@import url("./cabecalho-menu.css");
+@import url("./main-skills-footer.css");
+@import url("./projetos.css");
+@import url("./sobre.css");
+
+html[data-theme="light"] .logo {
+  filter: invert(1);
+}
+
+body {
+  background: var(--primary-bg-color);
+  font-family: var(--text-font);
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: var(--primary-color);
+  text-shadow: 0px 0px 0px var(--primary-color);
+}
+
+i {
+  color: var(--icon-color);
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-family: var(--title-font);
+}
+
+h3 {
+  font-family: var(--code-font);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h4 {
+  color: var(--subtitle-color);
+  font-family: var(--text-font);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+p {
+  color: var(--text-color);
+  font-weight: 300;
+  font-size: 1.15rem;
+}
+
+.btn {
+  display: flex;
+  gap: 0.675rem;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+  background-color: transparent;
+  border: none;
+  padding: 0.875rem 1.5rem;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.btn i {
+  color: inherit;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  border: 1px solid var(--primary-color);
+  border-radius: 3.125rem;
+  color: var(--primary-color);
+}
+
+#contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 3.5rem 1rem 2.5rem;
+}
+
+#contato h2 span {
+  color: var(--icon-color);
+}
+
+#contato p {
+  text-align: center;
+}
+
+#contato p i {
+  color: var(--icon-color);
+}
+
+#contato .menu-social .menu-link {
+  flex-direction: row;
+  gap: 0.25rem;
+  font-size: 1.2rem;
+}
+
+#contato .btn {
+  text-transform: lowercase;
+}
+
+@media (min-width: 768px) {
+  #contato {
+    padding: 3.5rem 5rem 2.5rem;
+  }
+
+}
+
+@media (min-width: 1400px) {
+  #contato {
+    padding: 3.5rem 15rem 2.5rem;
+  }
+}

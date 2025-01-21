@@ -1,0 +1,125 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: var(--text-color);
+  padding: 2.5rem 1rem 3rem;
+}
+
+main h1 {
+  font-size: 1.75rem;
+}
+
+main h1 span {
+  color: var(--icon-color);
+}
+
+.menu-social {
+  font-size: 1.5rem;
+  gap: 1rem;
+}
+
+.menu-social a:hover, .menu-social i:hover {
+  color: var(--primary-color);
+  text-shadow: 0 0 0 transparent;
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1.5rem;
+  padding: 4.5rem 1rem 3rem;
+  background: var(--secondary-bg-color);
+}
+
+#skills h2 span {
+  color: var(--icon-color);
+}
+
+.skills-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skills-item {
+  width: 2.5rem;
+  height: 2.5rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background: var(--footer-bg-color);
+  padding: 1.25rem 0 5rem;
+}
+
+footer p{
+  text-align: center;
+  color: var(--footer-color);
+}
+
+@media (min-width: 768px) {
+  main {
+    gap: 2rem;
+    padding: 11.25rem 5rem 5rem;
+  }
+
+  main h1 {
+    font-size: 3.5rem;
+  }
+
+  .btn-primary {
+    width: max-content;
+  }
+
+  #skills {
+    gap: 3rem;
+    padding: 7.5rem 5rem;
+  }
+
+  #skills h2 {
+    font-size: 2rem;
+  }
+
+  #skills .skills-item {
+    width: 4rem;
+  }
+
+  footer {
+    padding: 1.25rem 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  main {
+    padding: 11.25rem 15rem 5rem;
+  }
+
+  main h1 {
+    font-size: 5rem;
+  }
+
+  #skills {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    padding: 7.5rem 15rem;
+  }
+
+  #skills h2 {
+    width: 20ch;
+    line-height: 1.5;
+  }
+
+  .skills-list {
+    gap: 1rem;
+  }
+}
