@@ -1,0 +1,43 @@
+#contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 3.5rem 1rem 2.5rem;
+}
+
+#contato h2 span {
+  color: var(--icon-color);
+}
+
+#contato p {
+  text-align: center;
+}
+
+#contato p i {
+  color: var(--icon-color);
+}
+
+#contato .menu-social .menu-link {
+  flex-direction: row;
+  gap: 0.25rem;
+  font-size: 1.2rem;
+}
+
+#contato .btn {
+  text-transform: lowercase;
+}
+
+@media (min-width: 768px) {
+  #contato {
+    padding: 3.5rem 5rem 2.5rem;
+  }
+
+}
+
+@media (min-width: 1400px) {
+  #contato {
+    padding: 3.5rem 15rem 2.5rem;
+  }
+}
