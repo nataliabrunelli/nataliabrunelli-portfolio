@@ -24,17 +24,20 @@
 :root[data-theme="light"] {
   --primary-color: #020A12;
 
-  --primary-bg-color: #F5F5F5;
-  --secondary-bg-color: #D6F1FF;
-  --tertiary-bg-color: #ADE4FF;
+  --primary-bg-color: #FDF5ED;
+  --primary-bg-color-t: #DAEBFB48;
+  --secondary-bg-color: #DAEBFB;
+  --tertiary-bg-color: #B6D7F7;
+  --footer-bg-color: #1673CA4f;
 
   --border-color: #020A12;
 
   --title-color: #020A12;
-  --text-color: #02273C;
-  --link-color: #02273C;
-  --icon-color: #011A28;
-  --footer-color: #0580C7;
+  --subtitle-color: #061F37;
+  --text-color: #082A49;
+  --link-color: #049EF1;
+  --icon-color: #045f94;
+  --footer-color: #004e72;
 
   --title-font: "Bruno Ace", sans-serif;
   --text-font: "Montserrat", sans-serif;
