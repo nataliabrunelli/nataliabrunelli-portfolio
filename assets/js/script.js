@@ -1,3 +1,7 @@
+//SCROLL SUAVE
+import initSmoothScroll from "./scrollSuave.js";
+initSmoothScroll()
+
 // TOGGLE THEME
 const toggleTheme = document.getElementById("toggleTheme");
 const rootHTML = document.documentElement;
